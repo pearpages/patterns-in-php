@@ -1,5 +1,5 @@
 <?php
 interface Observer{
 
-	function update(temp, humidity, pressure);
+	function update($temp, $humidity, $pressure);
 }
