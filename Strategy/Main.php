@@ -8,3 +8,9 @@ $mallard->display();
 $mallard->swim();
 $mallard->performQuack();
 $mallard->performFly();
+
+$model = new ModelDuck();
+$model->display();
+$model->swim();
+$model->performQuack();
+$model->performFly();
