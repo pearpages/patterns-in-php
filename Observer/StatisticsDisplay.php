@@ -1,22 +1,10 @@
 <?php
-class CurrentConditionDisplay implements Observer, DisplayElement{
+class StatisticsDisplay implements Observer, DisplayElement{
 
-	/**
-	 * [$temperature description]
-	 * @var float
-	 */
 	private $temperature;
 
-	/**
-	* [$humidity description]
-	* @var float
-	*/
 	private $humidity;
 
-	/**
-	 * [$weatherData description]
-	 * @var WeatherData
-	 */
 	private $weatherData;
 
 	function __construct(WeatherData $weatherData){
@@ -31,6 +19,6 @@ class CurrentConditionDisplay implements Observer, DisplayElement{
 	}
 
 	function display(){
-		echo "Current conditions: {$this->temperature} degrees and humidity {$this->humidity} \n";
+		echo "Statistics: {$this->temperature} degrees and humidity {$this->humidity} \n";
 	}
 }
