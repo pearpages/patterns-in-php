@@ -1,7 +1,7 @@
 <?php
 class NYStylePizzaStore extends PizzaStore{
 	
-	function createPizza($type){
+	protected function createPizza($type){
 
 		$pizza = null;
 
