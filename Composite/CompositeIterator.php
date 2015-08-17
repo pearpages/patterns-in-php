@@ -6,4 +6,8 @@ class CompositeIterator implements MyIterator{
 	function __construct(MyIterator $iterator){
 		$this->stack[] = $iterator;
 	}
+
+	function next(){
+		
+	}
 }
